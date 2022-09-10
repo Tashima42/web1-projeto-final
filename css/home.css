@@ -1,0 +1,106 @@
+.home {
+  background-color: #ADD4D0;
+  margin-top: 60px;
+  width: 100vw;
+  height: calc(100vh - 60px);
+  padding-top: 0.1vh;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+}
+
+.inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.second-half button {
+  margin-right: 10px;
+}
+
+.vaccines {
+  margin: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.vaccine {
+  margin: 10px;
+  background-color: white;
+  border-radius: 10px;
+  width: 230px;
+  height: 210px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.vaccine-title {
+  margin: 0;
+  margin-top: 20px;
+  color: #3F92C5;
+  font-size: 25px;
+}
+
+.vaccine-dose {
+  margin: 0;
+  font-size: 10px;
+  color: white;
+  background-color: #3F92C5;
+}
+
+.vaccine-date {
+  margin: 0;
+  margin-top: 5px;
+  font-size: 10px;
+  color: #8B8B8B;
+}
+
+.vaccine-proof {
+  margin-bottom: 10px;
+  height: 100px;
+}
+
+.vaccine-next-dose {
+  margin: 0;
+  margin-right: 10px;
+  margin-bottom: 3px;
+  color: red;
+  font-size: 10px;
+  align-self: flex-end;
+  justify-self: flex-end;
+}
+
+.vaccines-search {
+  height: 50px;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search {
+  height: 20px;
+  width: 90%;
+  margin-top: 10px;
+  font-family: 'Averia Libre', sans-serif;
+  border: none;
+  align-self: flex-start;
+}
+
+.search-img {
+  background-color: white;
+  width: 22px;
+  height: 22px;
+  margin-top: 10px;
+  align-self: flex-start;
+}
+
+.new-vaccine {
+  margin-bottom: 30px;
+}

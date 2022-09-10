@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>My Health</title>
+  <link href="http://fonts.cdnfonts.com/css/averia-libre" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/new-vaccine.css">
+</head>
+
+<body>
+  <header>
+    <div class="first-half">
+      <a href="/">
+        <div class="logo">
+          <img src="../assets/icon-vaccine.png"></img>
+          <p>My Health</p>
+        </div>
+      </a>
+    </div>
+    <div class="second-half">
+      <button class="btn blue">Minhas vacinas</button>
+      <button class="btn blue">Logout</button>
+    </div>
+  </header>
+  <div class="new-vaccine">
+    <form>
+      <div class="labels">
+        <label for="new-vaccine-date">Data de vacinação </label>
+        <label for="new-vaccine-name">Vacina </label>
+        <label for="new-vaccine-choose">Dose </label>
+        <label for="new-vaccine-file">Comprovante da vacina</label>
+        <div class="blank"></div>
+        <label for="new-vaccine-next-dose">Próxima vacinação: </label>
+      </div>
+      <div class="inputs">
+        <input id="new-vaccine-date" type="date" />
+        <input id="new-vaccine-name" type="text" />
+        <div class="radios" id="new-vaccine-choose">
+          <input type="radio" id="1a" value="1a. dose" name="dose" checked /><label for="1a">1a. dose</label>
+          <input type="radio" id="2a" value="2a. dose" name="dose" /><label for="2a">2a. dose</label>
+          <input type="radio" id="3a" value="3a. dose" name="dose" /><label for="3a">3a. dose</label>
+          <input type="radio" id="unica" value="Dose única" name="dose" /><label for="unica">Dose única</label>
+          <input type="radio" id="reforco" value="Reforço" name="dose" /><label for="reforco">Reforço</label>
+        </div>
+        <input id="new-vaccine-file" type="file" />
+        <img class="new-vaccine-image" id="new-vaccine-image" />
+        <input id="new-vaccine-next-dose" type="date" />
+      </div>
+
+    </form>
+    <p class="new-vaccine-warning" id="new-vaccine-warning"></p>
+    <button class="btn green" id="new-vaccine-btn">Cadastrar</button>
+  </div>
+  <script type="module" src="../javascript/firebase.mjs"></script>
+  <script type="module" src="../javascript/index.mjs"></script>
+</body>
+
+</html

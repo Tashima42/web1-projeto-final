@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>My Health</title>
+  <link href="http://fonts.cdnfonts.com/css/averia-libre" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/create-account.css">
+</head>
+
+<body>
+  <header>
+    <div class="first-half">
+      <a href="/">
+        <div class="logo">
+          <img src="../assets/icon-vaccine.png"></img>
+          <p>My Health</p>
+        </div>
+      </a>
+    </div>
+  </header>
+  <div class="create-account">
+    <form>
+      <div class="labels">
+        <label for="new-account-name">Nome completo </label>
+        <label for="new-account-sex">Sexo </label>
+        <label for="new-account-birth-date">Data nascimento </label>
+        <label for="new-account-email">E-mail</label>
+        <label for="new-account-password">Senha </label>
+        <label for="new-account-repeat-password">Repetir senha </label>
+      </div>
+      <div class="inputs">
+        <input id="new-account-name" type="text" placeholder="João Pereira" />
+        <div class="radios" id="new-account-sex">
+          <input type="radio" id="m" value="m" name="sex" checked /><label for="m">Masculino</label>
+          <input type="radio" id="f" value="f" name="sex" /><label for="m">Feminino</label>
+        </div>
+        <input id="new-account-birth-date" type="date" />
+        <input id="new-account-email" placeholder="user@example.com" type="email" />
+        <input id="new-account-password" placeholder="**********" type="password" />
+        <input id="new-account-repeat-password" placeholder="**********" type="password" />
+
+        <p class="create-account-warning" id="create-account-warning"></p>
+      </div>
+    </form>
+    <button class="btn green new-account" id="create-account-btn">Cadastrar</button>
+  </div>
+  <script type="module" src="../javascript/firebase.mjs"></script>
+  <script type="module" src="../javascript/index.mjs"></script>
+</body>
+
+</html
